@@ -62,4 +62,3 @@ $.humanMsg.defaults = {
 };
 
 })(jQuery, this);	
-		
