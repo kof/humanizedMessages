@@ -14,8 +14,8 @@
     
 $.fn.humanMsg = function( message, options ) {
 	return this.each(function(){
-	    var elem = this == window || this == document ? document.body : this;
-		!$.data(elem, 'humanMsg') && $.data(elem, 'humanMsg', new $.humanMsg (elem, message, options) );
+	    var container = this == window || this == document ? document.body : this;
+		!$.data(container, 'humanMsg') && $.data(container, 'humanMsg', new $.humanMsg (container, message, options) );
 	});
 };
 
@@ -50,7 +50,7 @@ $.humanMsg = function( container, message, options ) {
 			$m.remove();
 			$.removeData(container, 'humanMsg');
 		});
-	};
+	}
 
 };
 
