@@ -61,5 +61,4 @@ $.humanMsg.defaults = {
 	speed: 300
 };
 
-})(jQuery, this);	
-		
+})(jQuery, this);
